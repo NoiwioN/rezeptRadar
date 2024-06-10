@@ -12,65 +12,133 @@
 
             <!-- Daily Inspiration Section -->
             <Label Text="Daily Inspiration" FontSize="Large" FontAttributes="Bold" />
-            <Frame 
-                Padding="0" 
-                Margin="0,10,0,0" 
-                BorderColor="Black"
-                HasShadow="False" 
-                HeightRequest="401" 
-                WidthRequest="277">
-                <StackLayout HeightRequest="401">
-                    <Frame HeightRequest="277" CornerRadius="0" Padding="0">
-                        <Image Source="bowl.jpg" Aspect="AspectFill" HeightRequest="277" />
-                    </Frame>
-                    <Frame HeightRequest="124" Padding="0" CornerRadius="0">
-                        <StackLayout BackgroundColor="{StaticResource fgColor}">
-                            <Label 
-                                Text="Tofu Edamame Bowl"  
-                                HeightRequest="50" 
-                                VerticalTextAlignment="Center" 
-                                FontSize="18"
-                                FontAttributes="Bold"
-                                Padding="15 50"
-                                />
-                            
-                            <Button 
-                                Text="Add 11 Ingredients" 
-                                BackgroundColor="{StaticResource actionElement}" 
-                                VerticalOptions="End" 
-                                HeightRequest="33" 
-                                Margin="20 0 0 0"
-                                TextColor="Black"
-                                CornerRadius="10"
-                                WidthRequest="180"
-                                FontSize="14"
-                                FontAttributes="Bold"/>
-                        </StackLayout>
-                    </Frame>
-                </StackLayout>
-            </Frame>
+            <CarouselView IndicatorView="indicatorViewDaily" x:Name="carouselViewDaily">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame 
+                            Padding="0" 
+                            Margin="0,10,0,0" 
+                            BorderColor="Black"
+                            HasShadow="False" 
+                            HeightRequest="401" 
+                            WidthRequest="277">     
+                            <StackLayout 
+                                HeightRequest="401">
+                                <Frame 
+                                    HeightRequest="277" 
+                                    CornerRadius="0" 
+                                    Padding="0">
+                                    <Image 
+                                        Source="{Binding Image}" 
+                                        Aspect="AspectFill" 
+                                        HeightRequest="277" />
+                                </Frame>
+                                <Frame 
+                                    HeightRequest="124" 
+                                    Padding="0" 
+                                    CornerRadius="0">
+                                    <StackLayout 
+                                        BackgroundColor="{StaticResource fgColor}">
+                                        <Label 
+                                            Text="{Binding Title}"  
+                                            HeightRequest="50" 
+                                            VerticalTextAlignment="Center" 
+                                            FontSize="18"
+                                            FontAttributes="Bold"
+                                            WidthRequest="180"
+                                            HorizontalOptions="Center"
+                                            TextColor="Black"
+                                        />
+
+                                        <Button 
+                                            Text="{Binding Description}" 
+                                            BackgroundColor="{StaticResource actionElement}" 
+                                            VerticalOptions="End" 
+                                            HeightRequest="33" 
+                                            TextColor="Black"
+                                            CornerRadius="10"
+                                            WidthRequest="180"
+                                            FontSize="14"
+                                            HorizontalOptions="Center"
+                                            FontAttributes="Bold"
+                                            />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="indicatorViewDaily" Margin="5" HorizontalOptions="Center" IndicatorColor="{StaticResource fgColor}" SelectedIndicatorColor="{StaticResource actionElement}"/>
+
+
 
             <!-- Spring Recipes Section -->
             <Label Text="Spring Recipes" FontSize="Large" FontAttributes="Bold" Margin="0,20,0,0" />
-            <!-- Recipe 1 -->
-            <Frame Padding="0" Margin="0,10,0,0" BorderColor="Transparent" HasShadow="False">
-                <StackLayout>
-                    <Image Source="bowl.jpg" Aspect="AspectFill" HeightRequest="150" />
-                    <Label Text="Tofu Edamame Bowl" FontSize="Medium" />
-                    <Label Text="30min" FontSize="Small" HorizontalOptions="End" />
-                    <Button Text="Add 11 Ingredients" BackgroundColor="#FF5252" TextColor="White" />
-                </StackLayout>
-            </Frame>
-            <!-- Recipe 2 -->
-            <Frame Padding="0" Margin="0,10,0,0" BorderColor="Transparent" HasShadow="False">
-                <StackLayout>
-                    <Image Source="image_source.png" Aspect="AspectFill" HeightRequest="150" />
-                    <Label Text="Tofu Edamame Bowl" FontSize="Medium" />
-                    <Label Text="30min" FontSize="Small" HorizontalOptions="End" />
-                    <Button Text="Add 11 Ingredients" BackgroundColor="#FF5252" TextColor="White" />
-                </StackLayout>
-            </Frame>
+            <CarouselView IndicatorView="indicatorViewSpring" x:Name="carouselViewSpring">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame 
+                            Padding="0" 
+                            Margin="0,10,0,0" 
+                            BorderColor="Black"
+                            HasShadow="False" 
+                            HeightRequest="401" 
+                            WidthRequest="277">
+                            <StackLayout 
+                                HeightRequest="401">
+                                <Frame 
+                                    HeightRequest="277" 
+                                    CornerRadius="0" 
+                                    Padding="0">
+                                    <Image 
+                                        Source="{Binding Image}" 
+                                        Aspect="AspectFill" 
+                                        HeightRequest="277" />
+                                </Frame>
+                                <Frame 
+                                    HeightRequest="124" 
+                                    Padding="0" 
+                                    CornerRadius="0">
+                                    <StackLayout 
+                                        BackgroundColor="{StaticResource fgColor}">
+                                        <Label 
+                                            Text="{Binding Title}"  
+                                            HeightRequest="50" 
+                                            VerticalTextAlignment="Center" 
+                                            FontSize="18"
+                                            FontAttributes="Bold"
+                                            WidthRequest="180"
+                                            HorizontalOptions="Center"
+                                            TextColor="Black"
+                                        />
 
+                                        <Button 
+                                            Text="{Binding Description}" 
+                                            BackgroundColor="{StaticResource actionElement}" 
+                                            VerticalOptions="End" 
+                                            HeightRequest="33" 
+                                            TextColor="Black"
+                                            CornerRadius="10"
+                                            WidthRequest="180"
+                                            FontSize="14"
+                                            HorizontalOptions="Center"
+                                            FontAttributes="Bold"
+                                            x:Name="buttonTypeBeat"
+                                            />
+                                    </StackLayout>
+                                    
+                                </Frame>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTappedRecepie"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="indicatorViewSpring" Margin="5" HorizontalOptions="Center" IndicatorColor="{StaticResource fgColor}" SelectedIndicatorColor="{StaticResource actionElement}"/>
+            <!-- Recipe 2 -->
         </StackLayout>
     </ScrollView>
 

@@ -62,6 +62,7 @@
 	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\List.png" />
 	  <None Remove="Resources\Images\Logo.png" />
+	  <None Remove="Resources\Images\menu.png" />
 	  <None Remove="Resources\Images\search.png" />
 	</ItemGroup>
 

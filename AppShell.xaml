@@ -12,7 +12,7 @@
     Shell.TabBarUnselectedColor="Black"
     Shell.BackgroundColor="{StaticResource bgColor}"
     Shell.TabBarDisabledColor="{StaticResource inactiveElement}"
-    FlyoutIcon="home.png"
+    FlyoutIcon="menu.png"
     >
 
  <!--
