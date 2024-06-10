@@ -1,0 +1,29 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RezeptRadar"
+             x:Class="RezeptRadar.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="bgColor">#F9C54E</Color>
+            <Color x:Key="fgColor">#43a889</Color>
+            <Color x:Key="actionElement">#f37558</Color>
+            <Color x:Key="text">#000000</Color>
+            <Color x:Key="inactiveElement">#a0a0a0</Color>
+            <Color x:Key="error">#cc3300</Color>
+            <Color x:Key="tabBar">#F8965D</Color>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource actionElement}"></Setter>
+            </Style>
+            <Style TargetType="Button" x:Key="buttonText">
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+                <Setter Property="FontSize" Value="18"></Setter>
+                <Setter Property="TextColor" Value="{StaticResource Black}"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

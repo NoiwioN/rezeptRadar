@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RezeptRadar.Pages.Browse"
+             Title="Browse"
+             Padding="8"
+             BackgroundColor="{StaticResource bgColor}"
+             >
+
+    <ScrollView>
+        <StackLayout BackgroundColor="{StaticResource bgColor}" Padding="10">
+
+            <!-- Daily Inspiration Section -->
+            <Label Text="Daily Inspiration" FontSize="Large" FontAttributes="Bold" />
+            <Frame 
+                Padding="0" 
+                Margin="0,10,0,0" 
+                BorderColor="Black"
+                HasShadow="False" 
+                HeightRequest="401" 
+                WidthRequest="277">
+                <StackLayout HeightRequest="401">
+                    <Frame HeightRequest="277" CornerRadius="0" Padding="0">
+                        <Image Source="bowl.jpg" Aspect="AspectFill" HeightRequest="277" />
+                    </Frame>
+                    <Frame HeightRequest="124" Padding="0" CornerRadius="0">
+                        <StackLayout BackgroundColor="{StaticResource fgColor}">
+                            <Label 
+                                Text="Tofu Edamame Bowl"  
+                                HeightRequest="50" 
+                                VerticalTextAlignment="Center" 
+                                FontSize="18"
+                                FontAttributes="Bold"
+                                Padding="15 50"
+                                />
+                            
+                            <Button 
+                                Text="Add 11 Ingredients" 
+                                BackgroundColor="{StaticResource actionElement}" 
+                                VerticalOptions="End" 
+                                HeightRequest="33" 
+                                Margin="20 0 0 0"
+                                TextColor="Black"
+                                CornerRadius="10"
+                                WidthRequest="180"
+                                FontSize="14"
+                                FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+
+            <!-- Spring Recipes Section -->
+            <Label Text="Spring Recipes" FontSize="Large" FontAttributes="Bold" Margin="0,20,0,0" />
+            <!-- Recipe 1 -->
+            <Frame Padding="0" Margin="0,10,0,0" BorderColor="Transparent" HasShadow="False">
+                <StackLayout>
+                    <Image Source="bowl.jpg" Aspect="AspectFill" HeightRequest="150" />
+                    <Label Text="Tofu Edamame Bowl" FontSize="Medium" />
+                    <Label Text="30min" FontSize="Small" HorizontalOptions="End" />
+                    <Button Text="Add 11 Ingredients" BackgroundColor="#FF5252" TextColor="White" />
+                </StackLayout>
+            </Frame>
+            <!-- Recipe 2 -->
+            <Frame Padding="0" Margin="0,10,0,0" BorderColor="Transparent" HasShadow="False">
+                <StackLayout>
+                    <Image Source="image_source.png" Aspect="AspectFill" HeightRequest="150" />
+                    <Label Text="Tofu Edamame Bowl" FontSize="Medium" />
+                    <Label Text="30min" FontSize="Small" HorizontalOptions="End" />
+                    <Button Text="Add 11 Ingredients" BackgroundColor="#FF5252" TextColor="White" />
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

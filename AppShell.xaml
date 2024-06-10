@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="RezeptRadar.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:RezeptRadar"
+    xmlns:localPages="clr-namespace:RezeptRadar.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    Title="RezeptRadar"
+    Shell.TabBarBackgroundColor="{StaticResource tabBar}"
+    Shell.TabBarTitleColor="Black"
+    Shell.TabBarUnselectedColor="Black"
+    Shell.BackgroundColor="{StaticResource bgColor}"
+    Shell.TabBarDisabledColor="{StaticResource inactiveElement}"
+    FlyoutIcon="home.png"
+    >
+
+ <!--
+       <TabBar>
+       <Tab Title="Browse" Icon="home.png">
+           <ShellContent ContentTemplate="{DataTemplate localPages:Browse}" />
+       </Tab>
+       
+       <Tab Title="Favorites" Icon="favorites.png">
+           <ShellContent ContentTemplate="{DataTemplate localPages:Favorites}"/>
+       </Tab>
+
+       <Tab Title="Search" Icon="search.png">
+           <ShellContent ContentTemplate="{DataTemplate localPages:Search}"/>
+       </Tab>
+
+       <Tab Title="ShoppingList" Icon="list.png">
+           <ShellContent ContentTemplate="{DataTemplate localPages:ShoppingList}"/>
+       </Tab>
+   </TabBar>
+    -->
+
+
+
+    <FlyoutItem Title="Astronomy" Icon="home.png">
+        <ShellContent ContentTemplate="{DataTemplate localPages:Browse}" Icon="home.png"/>
+        <ShellContent ContentTemplate="{DataTemplate localPages:Search}" Icon="search.png"/>
+        <ShellContent ContentTemplate="{DataTemplate localPages:ShoppingList}" Icon="list.png"/>
+        <ShellContent ContentTemplate="{DataTemplate localPages:Favorites}"  Icon="favorites.png"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Icon="favorites.png">
+        <ShellContent 
+            ContentTemplate="{DataTemplate localPages:Browse}" Icon="home.png"/>
+    </FlyoutItem>
+
+
+</Shell>
