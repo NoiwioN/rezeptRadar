@@ -8,10 +8,10 @@
              >
 
     <ScrollView>
-        <StackLayout BackgroundColor="{StaticResource bgColor}" Padding="10">
+        <StackLayout BackgroundColor="{StaticResource bgColor}" Padding="10" >
 
             <!-- Daily Inspiration Section -->
-            <Label Text="Daily Inspiration" Style="{StaticResource labelh1}"/>
+            <Label Text="Daily Inspiration" Style="{StaticResource labelh1}"  Padding="35,0,0,0"/>
             <CarouselView IndicatorView="indicatorViewDaily" x:Name="carouselViewDaily">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
@@ -43,12 +43,10 @@
                                             Text="{Binding Title}"  
                                             HeightRequest="50" 
                                             VerticalTextAlignment="Center" 
-                                            FontSize="18"
-                                            FontAttributes="Bold"
+                                            Style="{StaticResource labelh2}"
                                             WidthRequest="180"
                                             HorizontalOptions="Center"
                                             TextColor="Black"
-                                            FontFamily="ELEPHNTI"
                                         />
 
                                         <Button 
@@ -73,7 +71,7 @@
 
 
             <!-- Spring Recipes Section -->
-            <Label Text="Spring Recipes" Style="{StaticResource labelh1}" Margin="0,20,0,0" />
+            <Label Text="Spring Recipes" Style="{StaticResource labelh1}" Margin="0,20,0,0" Padding="35,0,0,0"/>
             <CarouselView IndicatorView="indicatorViewSpring" x:Name="carouselViewSpring">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
@@ -108,7 +106,6 @@
                                             Style="{StaticResource labelh2}"
                                             WidthRequest="180"
                                             HorizontalOptions="Center"
-                                            TextColor="Black"
                                         />
 
                                         <Button 
