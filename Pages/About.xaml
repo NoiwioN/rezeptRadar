@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RezeptRadar.Pages.About"
+             Title="About">
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="{StaticResource bgColor}" Padding="10">
+            <Label Text="Seitenübersicht" Style="{StaticResource labelh1}" Padding="0,10"/>
+            <Image Source="sitemap.png"
+                   WidthRequest="100"
+                   HorizontalOptions="Start"
+                   Aspect="AspectFill "
+                   />
+            <Label 
+                Text="Natürlich ist diese SiteMap nicht akkurat, aber dennoch habe ich nun ein Bild auf meiner ABOUT Seite, weiter habe ich lustigerweise nun auch meine Anforderung erfüllt, dasss es einen Text und Überschrift haben muss und das hat so, in der Anforderung haben wir diese Dinge in Mehrzahl, daher werde ich noch einen weiteren Eintrag machen aber ähnlich sinnfrei"
+                        Style="{StaticResource pStandard}"
+                Margin="0, 10"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

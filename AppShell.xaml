@@ -53,7 +53,7 @@
     </FlyoutItem>
     <FlyoutItem Title="About" Icon="about.png">
         <ShellContent 
-           ContentTemplate="{DataTemplate localPages:Faq}" Icon="about.png"/>
+           ContentTemplate="{DataTemplate localPages:About}" Icon="about.png"/>
     </FlyoutItem>
 
 
