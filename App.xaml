@@ -53,6 +53,17 @@
                 <Setter Property="FontAttributes" Value="Bold"></Setter>
                 <Setter Property="TextColor" Value="Black"></Setter>
             </Style>
+            <Style TargetType="Label" x:Key="pStandard">
+                <Setter Property="FontFamily" Value="TAHOMA"></Setter>
+                <Setter Property="FontSize" Value="14"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+            </Style>
+            <Style TargetType="Label" x:Key="pUnderlined">
+                <Setter Property="FontFamily" Value="TAHOMA"></Setter>
+                <Setter Property="FontSize" Value="14"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+                <Setter Property="TextDecorations" Value="Underline"></Setter>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
