@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RezeptRadar.Pages.Faq"
+             Title="FAQ">
+    <ScrollView>
+        <StackLayout
+             BackgroundColor="{StaticResource bgColor}" 
+            Padding="10">
+            <Label
+                Text="Wie koche ich?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Mit Kochutensilien, Zutaten und einer Kochinfrastruktur"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+            <Label
+                Text="Wie lange dauert es zu kochen?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Kommt auf das Rezept an, das ist in der Übersicht aber auch Detailansicht ersichtlich"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+            <Label
+                Text="Was, wenn ich mich schneide beim Kochen?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Je nach Verletztung sollte entsprechend gehandelt werden"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+            <Label
+                Text="Ich weiss nicht was kochen?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Dafür haben wir die Browse-Seite, die dir Vorschläge liefert"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+            <Label
+                Text="Wie komme ich an die Zutaten?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Geh in einen Laden"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+            <Label
+                Text="Wie viel kostet eine Mahlzeit?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Kommt auf das Rezept an"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+            <Label
+                Text="Was kann ich gegen Hunger tun?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Essen"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+            <Label
+                Text="Wie oft sollte ich kochen?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Essen solltest du sicher 2 Mal am Tag, je nach Portionsgrösse also 1-2 Mal"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+            <Label
+                Text="Wieso hat es so viele Fragen?"
+                Style="{StaticResource labelh2}"
+                Margin="0,20,0,10"
+                />
+            <Label 
+                Text="Damit die Scroll-View ersichtlich wird"
+                Style="{StaticResource pStandard}"
+                Margin="0,0,0,20"
+                />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

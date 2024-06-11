@@ -43,10 +43,17 @@
         <ShellContent ContentTemplate="{DataTemplate localPages:ShoppingList}" Icon="list.png"/>
         <ShellContent ContentTemplate="{DataTemplate localPages:Favorites}"  Icon="favorites.png"/>
     </FlyoutItem>
-
-    <FlyoutItem Title="About" Icon="favorites.png">
+    <FlyoutItem Title="Login/ Register" Icon="enter.png">
         <ShellContent 
-            ContentTemplate="{DataTemplate localPages:Browse}" Icon="home.png"/>
+            ContentTemplate="{DataTemplate localPages:Faq}" Icon="enter.png"/>
+    </FlyoutItem>
+    <FlyoutItem Title="FAQ" Icon="information.png">
+        <ShellContent 
+            ContentTemplate="{DataTemplate localPages:Faq}" Icon="information.png"/>
+    </FlyoutItem>
+    <FlyoutItem Title="About" Icon="about.png">
+        <ShellContent 
+           ContentTemplate="{DataTemplate localPages:Faq}" Icon="about.png"/>
     </FlyoutItem>
 
 

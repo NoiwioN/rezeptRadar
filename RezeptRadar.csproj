@@ -61,9 +61,12 @@
 	  <None Remove="Resources\Fonts\ELEPHNTI.TTF" />
 	  <None Remove="Resources\Fonts\TAHOMA.TTF" />
 	  <None Remove="Resources\Fonts\TAHOMABD.TTF" />
+	  <None Remove="Resources\Images\about.png" />
 	  <None Remove="Resources\Images\Bowl.jpg" />
+	  <None Remove="Resources\Images\enter.png" />
 	  <None Remove="Resources\Images\favorites.png" />
 	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\information.png" />
 	  <None Remove="Resources\Images\List.png" />
 	  <None Remove="Resources\Images\Logo.png" />
 	  <None Remove="Resources\Images\menu.png" />
@@ -78,6 +81,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Pages\Browse.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Faq.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Favorites.xaml">
