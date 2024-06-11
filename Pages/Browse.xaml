@@ -21,7 +21,7 @@
                             BorderColor="Black"
                             HasShadow="False" 
                             HeightRequest="401" 
-                            WidthRequest="277">     
+                            WidthRequest="277">
                             <StackLayout 
                                 HeightRequest="401">
                                 <Frame 
@@ -31,34 +31,53 @@
                                     <Image 
                                         Source="{Binding Image}" 
                                         Aspect="AspectFill" 
-                                        HeightRequest="277" />
+                                        HeightRequest="277">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Tapped="recipieClicked"
+                                                NumberOfTapsRequired="1"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
                                 </Frame>
                                 <Frame 
                                     HeightRequest="124" 
                                     Padding="0" 
-                                    CornerRadius="0">
-                                    <StackLayout 
-                                        BackgroundColor="{StaticResource fgColor}">
-                                        <Label 
+                                    CornerRadius="0"
+                                    >
+                                    <StackLayout
+                                        BackgroundColor="{StaticResource fgColor}"
+                                        >
+                                        <StackLayout.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Tapped="recipieClicked"
+                                                NumberOfTapsRequired="1"
+                                                />
+                                        </StackLayout.GestureRecognizers>
+                                        <StackLayout 
+                                        BackgroundColor="{StaticResource fgColor}"
+                                        HorizontalOptions="Center"
+                                        >
+                                            <Label 
                                             Text="{Binding Title}"  
                                             HeightRequest="50" 
                                             VerticalTextAlignment="Center" 
                                             Style="{StaticResource labelh2}"
-                                            WidthRequest="180"
-                                            HorizontalOptions="Center"
-                                            TextColor="Black"
+                                            HorizontalOptions="Start"
                                         />
 
-                                        <Button 
+                                            <Button 
                                             Text="{Binding Description}" 
                                             BackgroundColor="{StaticResource actionElement}" 
                                             VerticalOptions="End" 
-                                            HeightRequest="33" 
+                                            HeightRequest="35" 
                                             CornerRadius="10"
                                             WidthRequest="180"
                                             Style="{StaticResource buttonh3}"
                                             HorizontalOptions="Center"
+                                            x:Name="buttonTypeBeat"
+                                            Clicked="buttonTypeBeat_Clicked"
                                             />
+                                        </StackLayout>
                                     </StackLayout>
                                 </Frame>
                             </StackLayout>
@@ -91,47 +110,62 @@
                                     <Image 
                                         Source="{Binding Image}" 
                                         Aspect="AspectFill" 
-                                        HeightRequest="277" />
+                                        HeightRequest="277">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Tapped="recipieClicked"
+                                                NumberOfTapsRequired="1"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
                                 </Frame>
                                 <Frame 
                                     HeightRequest="124" 
                                     Padding="0" 
-                                    CornerRadius="0">
-                                    <StackLayout 
-                                        BackgroundColor="{StaticResource fgColor}">
-                                        <Label 
+                                    CornerRadius="0"
+                                    >
+                                    <StackLayout
+                                        BackgroundColor="{StaticResource fgColor}"
+                                        >
+                                        <StackLayout.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Tapped="recipieClicked"
+                                                NumberOfTapsRequired="1"
+                                                />
+                                        </StackLayout.GestureRecognizers>
+                                        <StackLayout 
+                                        BackgroundColor="{StaticResource fgColor}"
+                                        HorizontalOptions="Center"
+                                        >
+                                            <Label 
                                             Text="{Binding Title}"  
                                             HeightRequest="50" 
                                             VerticalTextAlignment="Center" 
                                             Style="{StaticResource labelh2}"
-                                            WidthRequest="180"
-                                            HorizontalOptions="Center"
+                                            HorizontalOptions="Start"
                                         />
 
-                                        <Button 
+                                            <Button 
                                             Text="{Binding Description}" 
                                             BackgroundColor="{StaticResource actionElement}" 
                                             VerticalOptions="End" 
-                                            HeightRequest="33" 
+                                            HeightRequest="35" 
                                             CornerRadius="10"
                                             WidthRequest="180"
                                             Style="{StaticResource buttonh3}"
                                             HorizontalOptions="Center"
                                             x:Name="buttonTypeBeat"
+                                            Clicked="buttonTypeBeat_Clicked"
                                             />
+                                        </StackLayout>
                                     </StackLayout>
-                                    
                                 </Frame>
                             </StackLayout>
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="OnTappedRecepie"/>
-                            </Frame.GestureRecognizers>
                         </Frame>
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
             <IndicatorView x:Name="indicatorViewSpring" Margin="5" HorizontalOptions="Center" IndicatorColor="{StaticResource fgColor}" SelectedIndicatorColor="{StaticResource actionElement}"/>
-            <!-- Recipe 2 -->
+            <Label x:Name="myLabel" Text="Test"></Label>
         </StackLayout>
     </ScrollView>
 

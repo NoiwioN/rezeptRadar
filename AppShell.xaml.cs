@@ -7,7 +7,6 @@ namespace RezeptRadar
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute("RezeptSeite", typeof(RezeptSeite));
            
         }
     }

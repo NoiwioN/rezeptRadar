@@ -1,11 +1,13 @@
 using RezeptRadar.Models;
+using System.Windows.Input;
 
 namespace RezeptRadar.Pages;
 
 public partial class Browse : ContentPage
 {
-	public Browse()
+    public Browse()
 	{
+
 		
 		InitializeComponent();
 
@@ -30,10 +32,22 @@ public partial class Browse : ContentPage
         };
         carouselViewSpring.ItemsSource = itemsSpring;
     }
-    async void OnTappedRecepie (object sender, EventArgs e)
+
+
+    private void buttonTypeBeat_Clicked(object sender, EventArgs e)
     {
-        indicatorViewSpring.IndicatorColor = Color.FromRgb(255,255,255);
-        await Shell.Current.GoToAsync("RezeptSeite");
+        myLabel.Text = "Button was clicked";
     }
 
+    private async void recipieClicked(object sender, TappedEventArgs e)
+    {
+        Routing.RegisterRoute("recipiePage", typeof(RezeptSeite));
+        await Shell.Current.GoToAsync("recipiePage");
+
+    }
+
+    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    {
+
+    }
 }

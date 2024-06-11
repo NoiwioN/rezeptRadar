@@ -37,7 +37,7 @@
 
 
 
-    <FlyoutItem Title="Astronomy" Icon="home.png">
+    <FlyoutItem Title="Home" Icon="home.png">
         <ShellContent ContentTemplate="{DataTemplate localPages:Browse}" Icon="home.png"/>
         <ShellContent ContentTemplate="{DataTemplate localPages:Search}" Icon="search.png"/>
         <ShellContent ContentTemplate="{DataTemplate localPages:ShoppingList}" Icon="list.png"/>
@@ -45,7 +45,7 @@
     </FlyoutItem>
     <FlyoutItem Title="Login/ Register" Icon="enter.png">
         <ShellContent 
-            ContentTemplate="{DataTemplate localPages:Faq}" Icon="enter.png"/>
+            ContentTemplate="{DataTemplate localPages:Login}" Icon="enter.png"/>
     </FlyoutItem>
     <FlyoutItem Title="FAQ" Icon="information.png">
         <ShellContent 
