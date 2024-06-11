@@ -13,6 +13,10 @@ namespace RezeptRadar
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("TAHOMA.TTF", "TahomaRegular");
+                    fonts.AddFont("TAHOMABD.TTF", "TahomaBold");
+                    fonts.AddFont("ELEPHNTI.TTF", "ElephantRegular");
+                    fonts.AddFont("ELEPHNT.TTF", "ElephantCursive");
                 });
 
 #if DEBUG

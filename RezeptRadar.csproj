@@ -57,6 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\ELEPHNT.TTF" />
+	  <None Remove="Resources\Fonts\ELEPHNTI.TTF" />
+	  <None Remove="Resources\Fonts\TAHOMA.TTF" />
+	  <None Remove="Resources\Fonts\TAHOMABD.TTF" />
 	  <None Remove="Resources\Images\Bowl.jpg" />
 	  <None Remove="Resources\Images\favorites.png" />
 	  <None Remove="Resources\Images\home.png" />

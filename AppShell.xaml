@@ -5,13 +5,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:RezeptRadar"
     xmlns:localPages="clr-namespace:RezeptRadar.Pages"
-    Shell.FlyoutBehavior="Disabled"
     Title="RezeptRadar"
     Shell.TabBarBackgroundColor="{StaticResource tabBar}"
     Shell.TabBarTitleColor="Black"
     Shell.TabBarUnselectedColor="Black"
     Shell.BackgroundColor="{StaticResource bgColor}"
     Shell.TabBarDisabledColor="{StaticResource inactiveElement}"
+    Shell.FlyoutBehavior="Flyout"
     FlyoutIcon="menu.png"
     >
 

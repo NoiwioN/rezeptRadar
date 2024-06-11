@@ -11,7 +11,7 @@
         <StackLayout BackgroundColor="{StaticResource bgColor}" Padding="10">
 
             <!-- Daily Inspiration Section -->
-            <Label Text="Daily Inspiration" FontSize="Large" FontAttributes="Bold" />
+            <Label Text="Daily Inspiration" Style="{StaticResource labelh1}"/>
             <CarouselView IndicatorView="indicatorViewDaily" x:Name="carouselViewDaily">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
@@ -48,6 +48,7 @@
                                             WidthRequest="180"
                                             HorizontalOptions="Center"
                                             TextColor="Black"
+                                            FontFamily="ELEPHNTI"
                                         />
 
                                         <Button 
@@ -55,12 +56,10 @@
                                             BackgroundColor="{StaticResource actionElement}" 
                                             VerticalOptions="End" 
                                             HeightRequest="33" 
-                                            TextColor="Black"
                                             CornerRadius="10"
                                             WidthRequest="180"
-                                            FontSize="14"
+                                            Style="{StaticResource buttonh3}"
                                             HorizontalOptions="Center"
-                                            FontAttributes="Bold"
                                             />
                                     </StackLayout>
                                 </Frame>
@@ -74,7 +73,7 @@
 
 
             <!-- Spring Recipes Section -->
-            <Label Text="Spring Recipes" FontSize="Large" FontAttributes="Bold" Margin="0,20,0,0" />
+            <Label Text="Spring Recipes" Style="{StaticResource labelh1}" Margin="0,20,0,0" />
             <CarouselView IndicatorView="indicatorViewSpring" x:Name="carouselViewSpring">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
@@ -106,8 +105,7 @@
                                             Text="{Binding Title}"  
                                             HeightRequest="50" 
                                             VerticalTextAlignment="Center" 
-                                            FontSize="18"
-                                            FontAttributes="Bold"
+                                            Style="{StaticResource labelh2}"
                                             WidthRequest="180"
                                             HorizontalOptions="Center"
                                             TextColor="Black"
@@ -118,12 +116,10 @@
                                             BackgroundColor="{StaticResource actionElement}" 
                                             VerticalOptions="End" 
                                             HeightRequest="33" 
-                                            TextColor="Black"
                                             CornerRadius="10"
                                             WidthRequest="180"
-                                            FontSize="14"
+                                            Style="{StaticResource buttonh3}"
                                             HorizontalOptions="Center"
-                                            FontAttributes="Bold"
                                             x:Name="buttonTypeBeat"
                                             />
                                     </StackLayout>
