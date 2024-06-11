@@ -36,7 +36,7 @@ public partial class Browse : ContentPage
 
     private void buttonTypeBeat_Clicked(object sender, EventArgs e)
     {
-        myLabel.Text = "Button was clicked";
+        Console.WriteLine("Yoo the button was pressed");
     }
 
     private async void recipieClicked(object sender, TappedEventArgs e)

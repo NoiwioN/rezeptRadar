@@ -7,8 +7,8 @@
     <VerticalStackLayout BackgroundColor="{StaticResource bgColor}">
         <Image Source="logo.png" Aspect="AspectFill " HorizontalOptions="Center"  Margin="0,0,0,120"></Image>
 
-        <Button Text="Log In" Style="{StaticResource buttonh2}" ></Button>
-        <Button Text="Sign Up With E-Email" Style="{StaticResource buttonh2}" Margin="0,10"></Button>
+        <Button Text="Log In" Style="{StaticResource buttonh2}" Clicked="Login_Clicked" WidthRequest="340" CornerRadius="10"></Button>
+        <Button Text="Sign Up With E-Email" Style="{StaticResource buttonh2}" Margin="0,10" Clicked="Register_Clicked" WidthRequest="340" CornerRadius="10"></Button>
 
     </VerticalStackLayout>
 </ContentPage>

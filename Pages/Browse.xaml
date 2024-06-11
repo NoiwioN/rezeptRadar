@@ -165,7 +165,6 @@
                 </CarouselView.ItemTemplate>
             </CarouselView>
             <IndicatorView x:Name="indicatorViewSpring" Margin="5" HorizontalOptions="Center" IndicatorColor="{StaticResource fgColor}" SelectedIndicatorColor="{StaticResource actionElement}"/>
-            <Label x:Name="myLabel" Text="Test"></Label>
         </StackLayout>
     </ScrollView>
 

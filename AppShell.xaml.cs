@@ -7,7 +7,8 @@ namespace RezeptRadar
         public AppShell()
         {
             InitializeComponent();
-           
+
+
         }
     }
 }

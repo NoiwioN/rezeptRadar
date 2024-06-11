@@ -37,11 +37,11 @@
 
 
 
-    <FlyoutItem Title="Home" Icon="home.png">
-        <ShellContent ContentTemplate="{DataTemplate localPages:Browse}" Icon="home.png"/>
-        <ShellContent ContentTemplate="{DataTemplate localPages:Search}" Icon="search.png"/>
-        <ShellContent ContentTemplate="{DataTemplate localPages:ShoppingList}" Icon="list.png"/>
-        <ShellContent ContentTemplate="{DataTemplate localPages:Favorites}"  Icon="favorites.png"/>
+    <FlyoutItem Title="Home" Icon="home.png" Route="Home">
+        <ShellContent Route="Browse" ContentTemplate="{DataTemplate localPages:Browse}" Icon="home.png"/>
+        <ShellContent Route="Search" ContentTemplate="{DataTemplate localPages:Search}" Icon="search.png"/>
+        <ShellContent Route="ShoppingList" ContentTemplate="{DataTemplate localPages:ShoppingList}" Icon="list.png"/>
+        <ShellContent Route="Favorites" ContentTemplate="{DataTemplate localPages:Favorites}"  Icon="favorites.png"/>
     </FlyoutItem>
     <FlyoutItem Title="Login/ Register" Icon="enter.png">
         <ShellContent 

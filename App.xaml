@@ -16,6 +16,7 @@
             <Color x:Key="inactiveElement">#a0a0a0</Color>
             <Color x:Key="error">#cc3300</Color>
             <Color x:Key="tabBar">#F8965D</Color>
+            <Color x:Key="success">#5cb85c</Color>
             <Style TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource actionElement}"></Setter>
             </Style>
