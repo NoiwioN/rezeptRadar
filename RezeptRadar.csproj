@@ -62,13 +62,19 @@
 	  <None Remove="Resources\Fonts\TAHOMA.TTF" />
 	  <None Remove="Resources\Fonts\TAHOMABD.TTF" />
 	  <None Remove="Resources\Images\Bowl.jpg" />
+	  <None Remove="Resources\Images\carrot.png" />
+	  <None Remove="Resources\Images\corn.png" />
+	  <None Remove="Resources\Images\edamame.png" />
 	  <None Remove="Resources\Images\favorites.png" />
 	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\lime.png" />
 	  <None Remove="Resources\Images\List.png" />
 	  <None Remove="Resources\Images\Logo.png" />
 	  <None Remove="Resources\Images\menu.png" />
 	  <None Remove="Resources\Images\search.png" />
 	  <None Remove="Resources\Images\Sitemap.png" />
+	  <None Remove="Resources\Images\tofu.png" />
+	  <None Remove="Resources\Images\tomato.png" />
 	</ItemGroup>
 
 	<ItemGroup>
