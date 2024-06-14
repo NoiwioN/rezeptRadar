@@ -1,12 +1,103 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RezeptRadar.Pages.ShoppingList"
-             Title="ShoppingList">
-    <VerticalStackLayout>
-        <Label 
-            Text="Shopping List"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="RezeptRadar.Pages.ShoppingList">
+    <ContentPage.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="BorderColor" Value="#f37558" />
+            <!-- Standardfarbe -->
+            <Setter Property="FontFamily" Value="TahomaRegular" />
+        </Style>
+    </ContentPage.Resources>
+    <ScrollView  BackgroundColor="{StaticResource bgColor}">
+        <VerticalStackLayout Padding="20,10">
+            <Label 
+            Text="Shopping List" Style="{StaticResource labelh2}" />
+            <Grid ColumnDefinitions="40, Auto"
+                  RowDefinitions="Auto, Auto ,Auto, Auto,Auto, Auto,Auto, Auto,Auto, Auto,Auto, Auto,Auto, 
+                  Auto,Auto, Auto, Auto, Auto ,Auto, Auto,Auto, Auto,Auto, Auto,Auto, Auto,Auto, Auto,Auto, Auto,Auto, Auto">
+                <!-- CheckBox 1 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="0" VerticalOptions="End"/>
+                <Label Text="Tomatensaft" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="0" VerticalOptions="Center"/>
+
+                <!-- CheckBox 2 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="1" VerticalOptions="End"/>
+                <Label Text="Milch" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"/>
+
+                <!-- CheckBox 3 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="2" VerticalOptions="End"/>
+                <Label Text="Brot" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="2" VerticalOptions="Center"/>
+
+                <!-- CheckBox 4 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="3" VerticalOptions="End"/>
+                <Label Text="Butter" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="3" VerticalOptions="Center"/>
+
+                <!-- CheckBox 5 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="4" VerticalOptions="End"/>
+                <Label Text="Eier" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="4" VerticalOptions="Center"/>
+
+                <!-- CheckBox 6 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="5" VerticalOptions="End"/>
+                <Label Text="Äpfel" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="5" VerticalOptions="Center"/>
+
+                <!-- CheckBox 7 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="6" VerticalOptions="End"/>
+                <Label Text="Bananen" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="6" VerticalOptions="Center"/>
+
+                <!-- CheckBox 8 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="7" VerticalOptions="End"/>
+                <Label Text="Käse" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="7" VerticalOptions="Center"/>
+
+                <!-- CheckBox 9 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="8" VerticalOptions="End"/>
+                <Label Text="Orangensaft" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="8" VerticalOptions="Center"/>
+
+                <!-- CheckBox 10 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="9" VerticalOptions="End"/>
+                <Label Text="Joghurt" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="9" VerticalOptions="Center"/>
+                <!-- CheckBox 11 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="10" VerticalOptions="End"/>
+                <Label Text="Müsli" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="10" VerticalOptions="Center"/>
+
+                <!-- CheckBox 12 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="11" VerticalOptions="End"/>
+                <Label Text="Schinken" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="11" VerticalOptions="Center"/>
+
+                <!-- CheckBox 13 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="12" VerticalOptions="End"/>
+                <Label Text="Salami" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="12" VerticalOptions="Center"/>
+
+                <!-- CheckBox 14 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="13" VerticalOptions="End"/>
+                <Label Text="Salat" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="13" VerticalOptions="Center"/>
+
+                <!-- CheckBox 15 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="14" VerticalOptions="End"/>
+                <Label Text="Tomaten" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="14" VerticalOptions="Center"/>
+
+                <!-- CheckBox 16 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="15" VerticalOptions="End"/>
+                <Label Text="Gurken" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="15" VerticalOptions="Center"/>
+
+                <!-- CheckBox 17 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="16" VerticalOptions="End"/>
+                <Label Text="Paprika" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="16" VerticalOptions="Center"/>
+
+                <!-- CheckBox 18 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="17" VerticalOptions="End"/>
+                <Label Text="Kartoffeln" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="17" VerticalOptions="Center"/>
+
+                <!-- CheckBox 19 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="18" VerticalOptions="End"/>
+                <Label Text="Zwiebeln" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="18" VerticalOptions="Center"/>
+
+                <!-- CheckBox 20 -->
+                <CheckBox Color="{DynamicResource inactiveElement}" CheckedChanged="CheckBox_CheckedChanged" Grid.Column="0" Grid.Row="19" VerticalOptions="End"/>
+                <Label Text="Knoblauch" Style="{StaticResource pStandard}" Grid.Column="1" Grid.Row="19" VerticalOptions="Center"/>
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>

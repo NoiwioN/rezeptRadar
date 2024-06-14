@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RezeptRadar.Pages.Search"
-             Title="Search">
+             x:Class="RezeptRadar.Pages.Search">
     <VerticalStackLayout Padding="10" BackgroundColor="{StaticResource bgColor}" >
         <Frame Padding="0.1"
                BorderColor="Black"
@@ -67,11 +66,11 @@
             <RadioButton Grid.Column="1" Grid.Row="3" Content="Neben" BorderColor="#f37558" FontFamily="TahomaRegular" FontSize="14" TextColor="Black" GroupName="a"></RadioButton>
             <Label Text="Ernährungsart: " Style="{StaticResource pStandard}" Grid.Column="0" Grid.Row="4"></Label>
             <HorizontalStackLayout Grid.Column="0" Grid.Row="6">
-                <Switch OnColor="#f37558" ThumbColor="#f37558"/>
+                <Switch OnColor="#f37558" ThumbColor="#f37558" Toggled="Switch_Toggled"/>
                 <Label Text="Glutenfrei" HorizontalOptions="End"></Label>
             </HorizontalStackLayout>
             <HorizontalStackLayout Grid.Column="1" Grid.Row="6">
-                <Switch  OnColor="#f37558" ThumbColor="#f37558"/>
+                <Switch  OnColor="#f37558" ThumbColor="#f37558" Toggled="Switch_Toggled"/>
                 <Label Text="Glutenfrei" HorizontalOptions="End"></Label>
             </HorizontalStackLayout>
 

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RezeptRadar.Pages.Favorites"
-             Title="Favorites">
+             x:Class="RezeptRadar.Pages.Favorites">
     <VerticalStackLayout BackgroundColor="{StaticResource bgColor}">
         <Label Text="Saved Recipies" Style="{StaticResource labelh1}"  HorizontalOptions="Center"/>
         <CarouselView IndicatorView="indicatorViewDaily" x:Name="carouselViewDaily">
