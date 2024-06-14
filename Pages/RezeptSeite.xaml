@@ -2,11 +2,248 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RezeptRadar.Pages.RezeptSeite"
-             Title="RezeptSeite">
-    <VerticalStackLayout>
-        <Label 
-            Text="Rezept"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="RezeptSeite"
+             >
+    <ScrollView Padding="0" 
+                BackgroundColor="{StaticResource bgColor}">
+        <VerticalStackLayout
+            BackgroundColor="{StaticResource bgColor}">
+            <VerticalStackLayout>
+                <Image Source="bowl.png" WidthRequest="400" Aspect="Fill"></Image>
+            </VerticalStackLayout>
+            <VerticalStackLayout Padding="10"
+                                 TranslationY="-60">
+                <Frame BackgroundColor="{StaticResource fgColor}"
+                       WidthRequest="290"
+                       Margin="0,0,0,20">
+
+                    <VerticalStackLayout>
+                        <Label Text="Recipie"
+                           Style="{StaticResource pStandard}"
+                           HorizontalOptions="Center"/>
+                        <Label  Text="Tofu Edamame Bowl"
+                                Style="{StaticResource labelh2}" 
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"
+                           />
+                        <Label HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="by" 
+                                          FontAttributes="Bold" 
+                                          FontFamily="TahomaRegular"
+                                          FontSize="14">
+
+                                    </Span>
+                                    <Span Text=" Mattias Zurbuchen"
+                                          FontSize="14"
+                                          FontFamily="TahomaRegular">
+
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <HorizontalStackLayout Margin="0, 10,0,15">
+                            <Button Text="Add 11 Ingredients"
+                                    FontAttributes="Bold" 
+                                    FontFamily="TahomaRegular"
+                                    FontSize="14"
+                                    TextColor="{StaticResource Black}"
+                                    />
+                            <Image Source="favorites.png" 
+                                   HeightRequest="31" 
+                                   Aspect="AspectFill" 
+                                   Margin="60,0,0,0"></Image>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+                <Grid ColumnDefinitions="135, 135" 
+                      ColumnSpacing="20" 
+                      RowDefinitions="91" 
+                      WidthRequest="290" 
+                      HorizontalOptions="Center"
+                      Margin="0,0,0,40"
+                      >
+                    <Frame WidthRequest="135" 
+                           BackgroundColor="{StaticResource fgColor}" 
+                           Grid.Row="0" 
+                           Grid.Column="0">
+                        <VerticalStackLayout>
+                            <Label Text="35 min" 
+                                   Style="{StaticResource labelh2}" 
+                                   HorizontalOptions="Center"></Label>
+                            <Label Text="Total Time" 
+                                   Style="{StaticResource pStandard}" 
+                                   Padding="0,10,0,0" 
+                                   HorizontalOptions="Center"></Label>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame WidthRequest="135" 
+                           BackgroundColor="{StaticResource fgColor}" 
+                           Grid.Row="1" 
+                           Grid.Column="1">
+                        <VerticalStackLayout>
+                            <Label Text="20 min" 
+                                   Style="{StaticResource labelh2}" 
+                                   HorizontalOptions="Center"></Label>
+                            <Label Text="Active Time" 
+                                   Style="{StaticResource pStandard}" 
+                                   Padding="0,10,0,0" 
+                                   HorizontalOptions="Center"></Label>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+                <Label Text="Ingredients"
+                      Style="{StaticResource labelh2}"
+                       Margin="40, 0, 0,0"/>
+                <Label Text="- Serves 4 +"
+                       Style="{StaticResource pStandard}"
+                       Margin="40, 0, 0,0"/>
+                <Grid RowDefinitions="73,73,73,73.73,73,73"
+                      ColumnDefinitions="65,100, 130"
+                      ColumnSpacing="10"
+                      Padding="5,0,0,0"
+                      >
+                    <Image Grid.Row="0" Grid.Column="0" Source="corn.png" Aspect="AspectFit" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="50 gram" Style="{StaticResource pStandard}" VerticalOptions="Center"/>
+                    <Label Grid.Row="0" Grid.Column="2" Text="Corn Beans, Washed" Style="{StaticResource labelh3}" VerticalOptions="Center"/>
+
+
+                    <Image Grid.Row="1" Grid.Column="0" Source="carrot.png" Aspect="AspectFit" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="150 gram" Style="{StaticResource pStandard}" VerticalOptions="Center"/>
+                    <Label Grid.Row="1" Grid.Column="2" Text="Carrot, Sliced" Style="{StaticResource labelh3}" VerticalOptions="Center"/>
+
+                    <Image Grid.Row="2" Grid.Column="0" Source="tofu.png" Aspect="AspectFit" />
+                    <Label Grid.Row="2" Grid.Column="1" Text="200 gram" Style="{StaticResource pStandard}" VerticalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="2" Text="Tofu, Washed, Pressed" Style="{StaticResource labelh3}" VerticalOptions="Center"/>
+
+                    <Image Grid.Row="3" Grid.Column="0" Source="tomato.png" Aspect="AspectFit" />
+                    <Label Grid.Row="3" Grid.Column="1" Text="100 gram" Style="{StaticResource pStandard}" VerticalOptions="Center"/>
+                    <Label Grid.Row="3" Grid.Column="2" Text="Tomato, Diced" Style="{StaticResource labelh3}" VerticalOptions="Center"/>
+
+                    <Image Grid.Row="4" Grid.Column="0" Source="edamame.png" Aspect="AspectFit" />
+                    <Label Grid.Row="4" Grid.Column="1" Text="100 gram" Style="{StaticResource pStandard}" VerticalOptions="Center"/>
+                    <Label Grid.Row="4" Grid.Column="2" Text="Edamame, Peeled" Style="{StaticResource labelh3}" VerticalOptions="Center"/>
+
+                    <Image Grid.Row="5" Grid.Column="0" Source="lime.png" Aspect="AspectFit" />
+                    <Label Grid.Row="5" Grid.Column="1" Text="1 piece" Style="{StaticResource pStandard}" VerticalOptions="Center"/>
+                    <Label Grid.Row="5" Grid.Column="2" Text="Corn Beans, Washed" Style="{StaticResource labelh3}" VerticalOptions="Center"/>
+
+                </Grid>
+                <Grid RowDefinitions="Auto, Auto, Auto"
+                        ColumnDefinitions="*,*,*,*"
+                        RowSpacing="5"
+                        Padding="10"
+                        Margin="0,10"
+                          >
+
+                    <!-- Überschrift -->
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="Nutritions Per Serving" Style="{StaticResource labelh2}" />
+
+                    <!-- Makrobezeichnungen und Mengenangaben -->
+                    <Label Grid.Row="1" Grid.Column="0" Text="Calories" Style="{StaticResource pStandard}" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="Fat" Style="{StaticResource pStandard}" />
+                    <Label Grid.Row="1" Grid.Column="2" Text="Protein" Style="{StaticResource pStandard}" />
+                    <Label Grid.Row="1" Grid.Column="3" Text="Carbs" Style="{StaticResource pStandard}" />
+
+
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="811" Style="{StaticResource labelh3}" />
+                    <Label Grid.Row="2" Grid.Column="1" Text="39 g" Style="{StaticResource labelh3}" />
+                    <Label Grid.Row="2" Grid.Column="2" Text="35.3 g" Style="{StaticResource labelh3}" />
+                    <Label Grid.Row="2" Grid.Column="3" Text="73.9 g" Style="{StaticResource labelh3}" />
+                </Grid>
+
+            </VerticalStackLayout>
+            <Grid Padding="20"
+                      RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                      ColumnDefinitions="Auto"
+                      BackgroundColor="{StaticResource fgColor}"
+                        RowSpacing="10"
+                        Margin="0,0,0,50"
+                      >
+                <!--Überschrift-->
+                <Label  Text="Directions" 
+                        Style="{StaticResource labelh2}"
+                        Grid.Column="0"
+                        Grid.Row="0"/>
+                <VerticalStackLayout Grid.Row="1">
+                    <Label Text="Step 1" Style="{StaticResource pStandard}" Margin="0,10,0,10"/>
+                    <Label Text="Cut tofu into uniform cubes and pat dry with" Style="{StaticResource pStandard}"/>
+                    <Label Text="paper towels to remove excess moisture." Style="{StaticResource pStandard}"/>
+                    <BoxView HeightRequest="0.1"
+                            HorizontalOptions="FillAndExpand"
+                            Color="Black"
+                            Margin="0,10,0,10"
+                             ScaleX="2"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="2">
+                    <Label Text="Step 1" Style="{StaticResource pStandard}" Margin="0,10,0,10"/>
+                    <Label Text="Cut tofu into uniform cubes and pat dry with" Style="{StaticResource pStandard}"/>
+                    <Label Text="paper towels to remove excess moisture." Style="{StaticResource pStandard}"/>
+                    <BoxView HeightRequest="0.1"
+                            HorizontalOptions="FillAndExpand"
+                            Color="Black"
+                            Margin="0,10,0,10"
+                             ScaleX="2"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="3">
+                    <Label Text="Step 1" Style="{StaticResource pStandard}" Margin="0,10,0,10"/>
+                    <Label Text="Cut tofu into uniform cubes and pat dry with" Style="{StaticResource pStandard}"/>
+                    <Label Text="paper towels to remove excess moisture." Style="{StaticResource pStandard}"/>
+                    <BoxView HeightRequest="0.1"
+                            HorizontalOptions="FillAndExpand"
+                            Color="Black"
+                            Margin="0,10,0,10"
+                             ScaleX="2"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="4">
+                    <Label Text="Step 1" Style="{StaticResource pStandard}" Margin="0,10,0,10"/>
+                    <Label Text="Cut tofu into uniform cubes and pat dry with" Style="{StaticResource pStandard}"/>
+                    <Label Text="paper towels to remove excess moisture." Style="{StaticResource pStandard}"/>
+                    <BoxView HeightRequest="0.1"
+                            HorizontalOptions="FillAndExpand"
+                            Color="Black"
+                            Margin="0,10,0,10"
+                             ScaleX="2"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="5">
+                    <Label Text="Step 1" Style="{StaticResource pStandard}" Margin="0,10,0,10"/>
+                    <Label Text="Cut tofu into uniform cubes and pat dry with" Style="{StaticResource pStandard}"/>
+                    <Label Text="paper towels to remove excess moisture." Style="{StaticResource pStandard}"/>
+                    <BoxView HeightRequest="0.1"
+                            HorizontalOptions="FillAndExpand"
+                            Color="Black"
+                            Margin="0,10,0,10"
+                             ScaleX="2"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="6">
+                    <Label Text="Step 1" Style="{StaticResource pStandard}" Margin="0,10,0,10"/>
+                    <Label Text="Cut tofu into uniform cubes and pat dry with" Style="{StaticResource pStandard}"/>
+                    <Label Text="paper towels to remove excess moisture." Style="{StaticResource pStandard}"/>
+                    <BoxView HeightRequest="0.1"
+                            HorizontalOptions="FillAndExpand"
+                            Color="Black"
+                            Margin="0,10,0,10"
+                             ScaleX="2"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="7">
+                    <Label Text="Step 1" Style="{StaticResource pStandard}" Margin="0,10,0,10"/>
+                    <Label Text="Cut tofu into uniform cubes and pat dry with" Style="{StaticResource pStandard}"/>
+                    <Label Text="paper towels to remove excess moisture." Style="{StaticResource pStandard}"/>
+                    <BoxView HeightRequest="0.1"
+                            HorizontalOptions="FillAndExpand"
+                            Color="Black"
+                            Margin="0,10,0,10"
+                             ScaleX="2"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="8">
+                    <Label Text="Step 9" Style="{StaticResource pStandard}" Margin="0,10,0,10"/>
+                    <Label Text="Cut tofu into uniform cubes and pat dry with" Style="{StaticResource pStandard}"/>
+                    <Label Text="paper towels to remove excess moisture." Style="{StaticResource pStandard}"/>
+                </VerticalStackLayout>
+            </Grid>
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>

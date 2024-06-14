@@ -67,7 +67,7 @@
             <RadioButton Grid.Column="1" Grid.Row="3" Content="Neben" BorderColor="#f37558" FontFamily="TahomaRegular" FontSize="14" TextColor="Black" GroupName="a"></RadioButton>
             <Label Text="Ernährungsart: " Style="{StaticResource pStandard}" Grid.Column="0" Grid.Row="4"></Label>
             <HorizontalStackLayout Grid.Column="0" Grid.Row="6">
-                <Switch OnColor="#f37558"/>
+                <Switch OnColor="#f37558" ThumbColor="#f37558"/>
                 <Label Text="Glutenfrei" HorizontalOptions="End"></Label>
             </HorizontalStackLayout>
             <HorizontalStackLayout Grid.Column="1" Grid.Row="6">
